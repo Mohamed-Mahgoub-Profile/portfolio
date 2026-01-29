@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Abdallah Mahgoub - Professional Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header .subtitle {
+            font-size: 1.3em;
+            font-weight: 300;
+            opacity: 0.95;
+            margin-bottom: 15px;
+        }
+
+        header .contact-info {
+            font-size: 0.95em;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            color: #1e3c72;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #2a5298;
+            padding-bottom: 10px;
+        }
+
+        .job {
+            margin-bottom: 35px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .company-title {
+            font-size: 1.4em;
+            font-weight: 700;
+            color: #1e3c72;
+        }
+
+        .job-position {
+            font-size: 1.1em;
+            color: #2a5298;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .job-meta {
+            font-size: 0.95em;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .achievement {
+            margin-bottom: 18px;
+            padding-left: 20px;
+            border-left: 3px solid #2a5298;
+        }
+
+        .achievement-title {
+            font-weight: 700;
+            color: #1e3c72;
+            margin-bottom: 5px;
+            font-size: 1.05em;
+        }
+
+        .achievement-description {
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .achievement ul {
+            margin-top: 8px;
+            margin-left: 20px;
+            color: #555;
+        }
+
+        .achievement li {
+            margin-bottom: 6px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #666;
+            font-size: 0.95em;
+            background-color: #f8f9fa;
+            border-top: 1px solid #ddd;
+        }
+
+        footer p {
+            margin-bottom: 5px;
+        }
+
+        .highlight {
+            color: #2a5298;
+            font-weight: 600;
+        }
+
+        .project-showcase {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            padding: 40px;
+            margin: 30px 0;
+            color: white;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-showcase-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .project-showcase h3 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+
+        .project-showcase p {
+            font-size: 1.1em;
+            margin-bottom: 25px;
+            opacity: 0.95;
+        }
+
+        .dashboard-button {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 16px 40px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.05em;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            border: none;
+        }
+
+        .dashboard-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+            background: #f0f7ff;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            header .subtitle {
+                font-size: 1.1em;
+            }
+
+            .job-header {
+                flex-direction: column;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            .container {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mohamed Abdallah Mahgoub</h1>
+        <p class="subtitle">Treasury & Financial Operations Expert</p>
+        <p class="contact-info">Treasury Back-Office Senior Executive | VBA Automation | Financial Modeling</p>
+    </header>
+
+    <div class="container">
+        <!-- Professional Experience Section -->
+        <section>
+            <h2>Professional Experience</h2>
+
+            <!-- QNB Position -->
+            <div class="job">
+                <div class="company-title">Qatar National Bank (QNB)</div>
+                <div class="job-position">Treasury Back-Office Senior Executive</div>
+                <div class="job-meta">Giza, Egypt — 06/2025 to Present</div>
+
+                <div class="achievement">
+                    <div class="achievement-title">1. Treasury Automation Suite (Advanced VBA Development)</div>
+                    <div class="achievement-description">
+                        Built multiple VBA-based automation tools that drastically reduced workflow time and manual errors. Converted recurring, multi-step processes into one-click automated systems used daily in treasury operations.
+                    </div>
+                </div>
+
+                <div class="achievement">
+                    <div class="achievement-title">2. Advanced Portfolio Amortization Model</div>
+                    <div class="achievement-description">
+                        Engineered a highly sophisticated VBA-based amortization model that calculates the precise amortization schedule for the entire treasury bill portfolio at any given date with a single click. This advanced analytical tool enables real-time portfolio valuation, accrual calculations, and financial reporting with unprecedented accuracy and efficiency, significantly enhancing decision-making capabilities for senior management.
+                    </div>
+                </div>
+
+                <div class="achievement">
+                    <div class="achievement-title">3. Regulatory Reporting Enhancement (CBE-Integrated)</div>
+                    <div class="achievement-description">
+                        Prepared and validated daily and monthly regulatory reports for the Central Bank of Egypt (CBE) including:
+                        <ul>
+                            <li>Liquidity positions and analysis</li>
+                            <li>Nostro account utilization and reconciliation</li>
+                            <li>FX and Money Market (MM) trade summaries</li>
+                        </ul>
+                        Ensured complete compliance and audit accuracy across all submissions.
+                    </div>
+                </div>
+
+                <div class="achievement">
+                    <div class="achievement-title">4. Uploadable Currency Position File (Built After CBE Coordination)</div>
+                    <div class="achievement-description">
+                        Communicated directly with the Central Bank of Egypt to obtain technical criteria and reporting specifications. Designed and built a fully uploadable currency position file, eliminating manual input and ensuring system readiness for CBE reporting requirements.
+                    </div>
+                </div>
+
+                <div class="achievement">
+                    <div class="achievement-title">5. Uploadable File for Foreign Money Market Deals</div>
+                    <div class="achievement-description">
+                        Created an uploadable tool for MM transactions, improving accuracy and speeding up trade processing. Reduced manual matching and facilitated faster integration into internal systems.
+                    </div>
+                </div>
+
+                <div class="achievement">
+                    <div class="achievement-title">6. Modernization of a Legacy Process (Since 2009)</div>
+                    <div class="achievement-description">
+                        Discovered an outdated workflow unchanged for over a decade. Re-engineered and fully automated it using advanced VBA, converting hours of manual work into seconds. Delivered clean, validated outputs ready for upload or reporting.
+                    </div>
+                </div>
+
+                <div class="achievement">
+                    <div class="achievement-title">7. Trade Processing & Settlement Optimization</div>
+                    <div class="achievement-description">
+                        Executed and settled Treasury Bills, Bonds, FX, and Interbank Money Market transactions with accuracy and speed. Operated the ETP system for secondary market trades and participated in CBE auctions.
+                    </div>
+                </div>
+
+                <div class="achievement">
+                    <div class="achievement-title">8. Kondor, SWIFT, RTGS Reconciliation</div>
+                    <div class="achievement-description">
+                        Performed matching, reconciliation, and confirmations across Kondor, RTGS, and SWIFT systems for all asset classes, ensuring data integrity and settlement accuracy.
+                    </div>
+                </div>
+
+                <div class="achievement">
+                    <div class="achievement-title">9. Workflow Integration Across Departments</div>
+                    <div class="achievement-description">
+                        Collaborated with Front Office, Finance Control, and Operations to enhance efficiency, reduce delays, and resolve settlement discrepancies. Served as a bridge between technical and business teams.
+                    </div>
+                </div>
+
+                <!-- KONDOR WIZARD Dashboard Project -->
+                <div class="project-showcase">
+                    <div class="project-showcase-content">
+                        <h3>KONDOR WIZARD</h3>
+                        <p>Treasury Accounting Intelligence Dashboard</p>
+                        <p style="font-size: 0.95em; margin-bottom: 25px;">An interactive treasury management system featuring real-time portfolio analysis, regulatory reporting, and advanced financial modeling capabilities.</p>
+                        <a href="kondor_wizard.html" class="dashboard-button">Explore Dashboard</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banque du Caire Position -->
+            <div class="job">
+                <div class="company-title">Banque du Caire (BDC)</div>
+                <div class="job-position">Treasury Back-Office Officer</div>
+                <div class="job-meta">Cairo, Egypt — 03/2023 to 05/2025</div>
+
+                <div class="achievement">
+                    <div class="achievement-title">1. Capacity Planning System Administrator (Access-Based)</div>
+                    <div class="achievement-description">
+                        Managed and enhanced the capacity planning system. Updated tasks, corrected discrepancies, ensured proper daily entries, and delivered clean data for reporting to senior management.
+                    </div>
+                </div>
+
+                <div class="achievement">
+                    <div class="achievement-title">2. System Recovery Achievement (Major Contribution)</div>
+                    <div class="achievement-description">
+                        Restored the system after it was accidentally deleted from the shared drive. Manually re-entered approximately 30,000 records, reconstructed system files, and ensured zero operational downtime—demonstrating exceptional problem-solving and dedication.
+                    </div>
+                </div>
+
+                <div class="achievement">
+                    <div class="achievement-title">3. Secondary Market Execution (Bills & Bonds)</div>
+                    <div class="achievement-description">
+                        Executed trades on the ETP system, reducing trade failures through precision and proactive communication with all stakeholders.
+                    </div>
+                </div>
+
+                <div class="achievement">
+                    <div class="achievement-title">4. Cash Flow Reporting & Liquidity Optimization</div>
+                    <div class="achievement-description">
+                        Generated cash flow reports supporting CBE account liquidity decisions, enabling strategic treasury management.
+                    </div>
+                </div>
+
+                <div class="achievement">
+                    <div class="achievement-title">5. Regulatory Reporting</div>
+                    <div class="achievement-description">
+                        Submitted monthly CBE reports covering bonds, bills, and FX resources and uses, maintaining full compliance with regulatory requirements.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Misr for Printing Position -->
+            <div class="job">
+                <div class="company-title">Misr for Printing (Foreign Trade & Finance)</div>
+                <div class="job-position">Treasury & Trade Finance Officer</div>
+                <div class="job-meta">Cairo, Egypt — 01/2022 to 02/2023</div>
+
+                <div class="achievement">
+                    <div class="achievement-description">
+                        <ul>
+                            <li><span class="highlight">LC/LG Operations Management:</span> Managed Letter of Credit and Letter of Guarantee operations with precision and compliance.</li>
+                            <li><span class="highlight">Cash Flow Analysis:</span> Conducted comprehensive cash flow analysis to support financial planning and liquidity management.</li>
+                            <li><span class="highlight">Bank Account Reconciliation:</span> Performed detailed reconciliation of bank accounts, ensuring accuracy and identifying discrepancies.</li>
+                            <li><span class="highlight">Supplier Documentation Optimization:</span> Reduced supplier documentation processing time by 25%, improving operational efficiency.</li>
+                            <li><span class="highlight">FX Hedging Strategy:</span> Executed FX hedging strategies using swaps and options to mitigate currency risk.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Competencies Section -->
+        <section>
+            <h2>Core Competencies</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                <div>
+                    <h3 style="color: #2a5298; margin-bottom: 10px;">Technical Skills</h3>
+                    <ul style="list-style: none; color: #555;">
+                        <li>✓ Advanced VBA Development & Automation</li>
+                        <li>✓ Financial Modeling & Analysis</li>
+                        <li>✓ Treasury Management Systems</li>
+                        <li>✓ Data Reconciliation & Validation</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 style="color: #2a5298; margin-bottom: 10px;">Treasury Operations</h3>
+                    <ul style="list-style: none; color: #555;">
+                        <li>✓ Trade Settlement & Processing</li>
+                        <li>✓ Regulatory Reporting (CBE)</li>
+                        <li>✓ FX & Money Market Operations</li>
+                        <li>✓ Portfolio Management</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 style="color: #2a5298; margin-bottom: 10px;">Systems & Tools</h3>
+                    <ul style="list-style: none; color: #555;">
+                        <li>✓ Kondor</li>
+                        <li>✓ SWIFT, MT, MX, ISO20022</li>
+                        <li>✓ CBE Portals: RTGS, CSD, FX, AUCTION</li>
+                        <li>✓ ETP System</li>
+                        <li>✓ Excel & VBA</li>
+                        <li>✓ Database Management</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p><strong>Mohamed Abdallah Mahgoub</strong> | Treasury & Financial Operations Expert</p>
+        <p>Created by Mohamed Mahgoub</p>
+        <p style="margin-top: 20px; border-top: 1px solid #ddd; padding-top: 20px;">
+            <strong>Contact Information</strong><br>
+            Email: <a href="mailto:mahgoubm33@gmail.com" style="color: #2a5298; text-decoration: none;">mahgoubm33@gmail.com</a><br>
+            <a href="https://www.linkedin.com/in/mohamed-a-mahgoub" style="color: #2a5298; text-decoration: none;" target="_blank">LinkedIn</a>
+        </p>
+    </footer>
+</body>
+</html>
